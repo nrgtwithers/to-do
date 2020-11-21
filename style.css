@@ -91,12 +91,12 @@ div#buttons{
 
 ol {
   margin-top: 50px;
-  opacity: 50%;
-  text-align: "center";
+/*   opacity: 50%;
+ */  text-align: "center";
   margin: auto;
   width: 50%;
-  background-color: #568ea6;
-  width: 250px;
+/*   background-color: #568ea6;
+ */  width: 250px;
   padding: 50px;
   font-size: 20px;
   border-radius: 25px;
