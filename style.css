@@ -1,0 +1,108 @@
+body#grad {
+  background-image: linear-gradient(to right, #305f72, #568EA6, white);
+  background-color: #305f72;
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  color: white;
+  text-shadow: 2px 4px #f18c8e;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+}
+
+div#box {
+  margin: auto;
+  width: 65%;
+  /*  background-color: gray; */
+  width: 300px;
+  padding: 30px;
+}
+
+input#text{
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight:bold;
+    color: #305f72;
+    font-family: 'PT Sans Narrow', sans-serif;
+    padding: 10px;
+    border-radius: 25px;
+    width:250px;
+    border-color: white;
+}
+
+button#submit {
+  margin: auto;
+  margin-top: 20px;
+  font-weight:bold;
+  font-size: 20px;
+  font-family: 'PT Sans Narrow', sans-serif;
+  background-color:#f18c8e;
+  color:white;
+  border-radius: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+  display:inline-block;
+  margin-right: -70px;
+}
+button#reset {
+    margin: auto;
+    margin-top: 20px;
+    font-weight:bold;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color:#f18c8e;
+    color:white;
+    border-radius: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
+    display:inline-block;
+  }
+
+button.delete {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight:bold;
+    font-size: 20px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    background-color:white;
+    color:#f18c8e;
+    border-radius: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
+    border-color: white;
+
+  }
+
+button#submit:hover, button.delete:hover, button#reset:hover{
+    background-color:silver;
+}
+
+div#buttons{
+  
+    display: flex;
+}
+
+ol {
+  margin-top: 50px;
+  opacity: 50%;
+  text-align: "center";
+  margin: auto;
+  width: 50%;
+  background-color: #568ea6;
+  width: 250px;
+  padding: 50px;
+  font-size: 20px;
+  border-radius: 25px;
+  color: white;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
