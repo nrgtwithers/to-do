@@ -3,26 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Custom Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans+Narrow:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome for ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <script src="https://use.fontawesome.com/7a8911c3ab.js"></script>
+    <!-- Links style.css file -->
     <link rel="stylesheet" href="style.css" />
 
     <title>To do list</title>
   </head>
-  <body id="grad">
-    <h1>To do list</h1>
+  <body>
+    <header>
+      <h1>To do list</h1>
+    </header>
 
-    <div id="box">
-      <input type="text" id="text" name="text" multiple />
+    <form>
+      <input type="text" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <i class="fas fa-plus-square"></i>
+      </button>
+    </form>
+
+    <div class='todo-container'>
+      <ul class="todo-list"></ul>
+    </div>
+
+    <!--     <div id="box">
+      <input type="text" id="text" name="text" multiple placeholder="What would you like to do?"/>
       <div id="buttons">
-        <button id="submit">Add</button><button id="reset">Reset</button>
+        <button id="submit"><i class="fa fa-plus" aria-hidden="true"></i>
+        </button><button id="reset">CLEAR LIST</button>
       </div>
     </div>
 
     <ol></ol>
+  -->
+
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="todo.js"></script>

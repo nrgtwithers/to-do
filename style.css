@@ -1,23 +1,114 @@
-body#grad {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
   background-image: linear-gradient(to right, #305f72, #568EA6, white);
   background-color: #305f72;
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
+  min-width: 100vh;
 }
 
-h1 {
+header {
   font-family: "Lobster", cursive;
   color: white;
-  text-shadow: 2px 4px #f18c8e;
-  font-size: 50px;
+  font-size: 10 rem;
   font-weight: bold;
-  text-align: center;
 }
 
-div#box {
+header,
+ form {
+  min-height: 8vh;
+  text-shadow: 2px 2px #f18c8e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input.todo-input{
+  min-width: 20vh;
+  padding: 3px;
+}
+
+form input, form button{
+  padding: 0.5 rem;
+  font-size: 2 rem;
+  border: none;
+  background: white;
+}
+
+form button{
+  color: #f18c8e;
+  background: white;
+  padding: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border:none;
+}
+
+form button:hover {
+  background: grey;
+  color: white;
+}
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.todo-list{
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  background:white;
+  color: black;
+  font-size: 1.5 rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo li{
+  flex: 1;
+}
+
+.trash-btn, .complete-btn{
+  background:#f18c8e; 
+  color: white;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+  font-size: 1 rem;
+}
+
+.complete-btn{
+  background: lightgreen;
+}
+
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+  pointer-events: none;
+}
+
+.completed{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* div#box {
   margin: auto;
   width: 65%;
-  /*  background-color: gray; */
   width: 300px;
   padding: 30px;
 }
@@ -31,9 +122,8 @@ input#text{
     color: #305f72;
     font-family: 'PT Sans Narrow', sans-serif;
     padding: 10px;
-    border-radius: 25px;
     width:250px;
-    border-color: white;
+    border: none;
 }
 
 button#submit {
@@ -44,7 +134,7 @@ button#submit {
   font-family: 'PT Sans Narrow', sans-serif;
   background-color:#f18c8e;
   color:white;
-  border-radius: 5px;
+  border: none;
   padding-right: 6px;
   padding-left: 6px;
   display:inline-block;
@@ -58,7 +148,7 @@ button#reset {
     font-family: 'PT Sans Narrow', sans-serif;
     background-color:#f18c8e;
     color:white;
-    border-radius: 5px;
+    border: none;
     padding-right: 6px;
     padding-left: 6px;
     display:inline-block;
@@ -73,7 +163,7 @@ button.delete {
     font-family: 'PT Sans Narrow', sans-serif;
     background-color:white;
     color:#f18c8e;
-    border-radius: 5px;
+    border: none;
     padding-right: 6px;
     padding-left: 6px;
     border-color: white;
@@ -91,18 +181,17 @@ div#buttons{
 
 ol {
   margin-top: 50px;
-/*   opacity: 50%;
- */  text-align: "center";
+ text-align: "center";
   margin: auto;
   width: 50%;
-/*   background-color: #568ea6;
- */  width: 250px;
+  width: 250px;
   padding: 50px;
   font-size: 20px;
-  border-radius: 25px;
+  border: none;
   color: white;
 }
 
 li.completed {
   text-decoration: line-through;
 }
+ */
